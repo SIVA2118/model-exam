@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-title">
+            <img src="./logo/ShoppingPoint.png" alt="Logo" class="logo"> 
+            <h1>ShoppinPoint</h1>
+        </div>
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <!-- Sidebar Dashboard Menu for Mobile -->
+        <div class="sidebar-menu" id="sidebarMenu">
+            <a href="#home" onclick="toggleMenu()">Home</a>
+            <a href="products.html" onclick="toggleMenu()">Products</a>
+            <a href="#about" onclick="toggleMenu()">About Us</a>
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <div class="content-wrapper">
+        <!-- Main Section with Floated Image -->
+        <section class="main-content">
+            <img src="./gif/v2.gif" alt="Featured Product">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat, ipsum sit amet fringilla vehicula, leo ex interdum turpis, et semper sapien ipsum a lacus. Proin interdum pharetra libero, nec pretium felis egestas eu.</p>
+            <p>Ut tincidunt orci id risus vehicula, ac dignissim ligula vestibulum. Phasellus a felis ac augue vestibulum consequat. Nulla eu elit ipsum. Aenean et consectetur mauris.</p>
+        </section>
+
+        <!-- Sidebar with Links List -->
+        <!-- Sidebar with Links List and Category Images -->
+<aside class="sidebar">
+    <h3>Product Categories</h3>
+    <ul>
+        <li><a href="#electronics"><img src="./images/Electronics.jpeg" alt="Electronics" class="category-icon"> Electronics</a></li><br>
+        <li><a href="#clothing"><img src="./images/Clothing.jpeg" alt="Clothing" class="category-icon"> Clothing</a></li><br>
+        <li><a href="#home-appliances"><img src="./images/Home Appliances.jpg" alt="Home Appliances" class="category-icon"> Home Appliances</a></li><br>
+        <li><a href="#sports"><img src="./images/Sports Equipment.jpeg" alt="Sports Equipment" class="category-icon"> Sports Equipment</a></li><br>
+        <li><a href="#beauty"><img src="./images/Beauty Products.jpeg" alt="Beauty Products" class="category-icon"> Beauty Products</a></li><br>
+    </ul>
+</aside>
+    </div>
+
+    <!-- Footer with Character Entity -->
+    <footer>
+        <p>&copy; 2024 shoppinpoint &bull; All Rights Reserved &bull; Made with &#9829; by Sivakumar S</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const sidebarMenu = document.getElementById('sidebarMenu');
+            sidebarMenu.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
